@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ГЕОРГИ & АНАСТАСИЯ - Сватбен Покана</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+
+  <!-- Desktop Canvas Container -->
+  <main class="desktop-wrapper">
+
+    <!-- Phone Mockup Container -->
+    <div class="phone-frame">
+      <div class="scroll-container">
+
+        <!-- SECTION 1: Cover / Hero (Screenshot 1) -->
+        <section class="screen cover-screen">
+          <div class="hero-content">
+            <h1 class="names">
+              ГЕОРГИ
+              <span class="and-text">— and —</span>
+              АНАСТАСИЯ
+            </h1>
+          </div>
+          <div class="scroll-down">
+            <span>ПРЕВЪРТИ НАДОЛУ</span>
+            <div class="arrow">↓</div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: Save The Date (Screenshot 2) -->
+        <section class="screen save-the-date-screen">
+          <p class="intro-text">
+            За нас, Анастасия и Георги,<br>
+            18.06.2026 г. - денят на нашата сватба - ще бъде един от най-щастливите дни в живота ни.
+            Затова искаме най-близките ни хора, всички онези, които обичаме и които ни обичат, да бъдат до нас в този специален ден.
+          </p>
+          <div class="save-the-date-graphic">
+            <h2>SAVE</h2>
+            <span class="script-the">the</span>
+            <h2>DATE</h2>
+          </div>
+          <div class="date-large">18/06/2026</div>
+        </section>
+
+        <!-- SECTION 3: Invitation Text & Photo Grid (Screenshot 3) -->
+        <section class="screen invite-screen">
+          <div class="photo-grid">
+            <div class="photo photo-left"></div>
+            <div class="photo photo-right"></div>
+          </div>
+          <div class="invite-content">
+            <span class="script-title">Скъпи</span>
+            <h3 class="gold-subtitle">Роднини и приятели</h3>
+            <p>
+              Каним Ви да бъдете гости на сватбеното ни тържество и да споделите с нас нашия прекрасен празник.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 4: Location (Screenshot 4) -->
+        <section class="screen location-screen">
+          <h2 class="section-title">ЛОКАЦИЯ</h2>
+          <div class="location-card">
+            <div class="location-img"></div>
+            <h3>BlackSeaRama<br>Golf & Villas</h3>
+            <p>Tabliata District, 9600 Балчик,<br>България</p>
+            <a href="#" class="btn-map">ВИЖ НА КАРТАТА</a>
+          </div>
+        </section>
+
+        <!-- SECTION 5: Timeline / Program (Screenshot 5 & 6) -->
+        <section class="screen program-screen">
+          <h2 class="section-title">ПРОГРАМА</h2>
+          <div class="timeline">
+            <div class="timeline-event right">
+              <span class="icon">🥂</span>
+              <div class="event-details">
+                <span class="time">16:30 Ч</span>
+                <p>Добре дошли в комплекс Black Sea Rama</p>
+              </div>
+            </div>
+            <div class="timeline-event left">
+              <span class="icon">💍</span>
+              <div class="event-details">
+                <span class="time">17:00 Ч</span>
+                <p>Нашето „завинаги“ започва с безкрайния, морски хоризонт на амфитеатъра</p>
+              </div>
+            </div>
+            <div class="timeline-event right">
+              <span class="icon">🎉</span>
+              <div class="event-details">
+                <span class="time">17:30 Ч</span>
+                <p>Ще приемем Вашите поздравления, ще се снимаме за спомен и нека преглътнем сълзите от щастие с чаша пенливо вино</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: Countdown Timer (Screenshot 7) -->
+        <section class="screen countdown-screen">
+          <div class="timer-overlay">
+            <div class="timer-item">
+              <span class="number">00</span>
+              <span class="label">Дни</span>
+            </div>
+            <div class="timer-item">
+              <span class="number">00</span>
+              <span class="label">Часа</span>
+            </div>
+            <div class="timer-item">
+              <span class="number">00</span>
+              <span class="label">Минути</span>
+            </div>
+            <div class="timer-item">
+              <span class="number">00</span>
+              <span class="label">Секунди</span>
+            </div>
+            <p class="timer-tagline">...и ние ще сме женени!</p>
+          </div>
+        </section>
+
+        <!-- SECTION 7: RSVP & Confirmation (Screenshot 8) -->
+        <section class="screen rsvp-screen">
+          <div class="rsvp-content">
+            <p class="rsvp-heading">Моля потвърдете присъствието си до 18.04.2026.</p>
+            <p class="rsvp-subtext">
+              Скъпи гости, ако сме пропуснали нещо или просто искате да попитате — свържете се с нас, ще се радвaме да ви чуем!
+            </p>
+            <div class="contacts">
+              <p><strong>Георги:</strong> 0894/679567</p>
+              <p><strong>Анастасия:</strong> 0892/205555</p>
+            </div>
+          </div>
+          <footer class="footer-tag">
+            made with ♡ by invito.ua
+          </footer>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
