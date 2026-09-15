@@ -1,0 +1,70 @@
+.wedding-form {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto 0;
+  text-align: left;
+}
+
+.form-field {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #776f62;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.wedding-form input,
+.wedding-form select,
+.wedding-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #f7f4f1;
+  border: 1px solid #d1c7b7;
+  border-radius: 3px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: #4a4238;
+  outline: none;
+}
+
+.wedding-form input:focus,
+.wedding-form select:focus,
+.wedding-form textarea:focus {
+  border-color: #9b9075;
+  background-color: #ffffff;
+}
+
+.wedding-form textarea {
+  resize: none;
+}
+
+.error {
+  color: #b95c50;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #9b9075;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #8c8269;
+}

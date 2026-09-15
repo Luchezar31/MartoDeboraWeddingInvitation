@@ -2,6 +2,8 @@
 
 from django.db import models
 
+from invitation.choices import AttendingTextChoices
+
 class WeddingGuest(models.Model):
     first_name = models.CharField(
         max_length=50,
@@ -12,12 +14,16 @@ class WeddingGuest(models.Model):
     email = models.EmailField()
 
     attending = models.BooleanField(
-        default=False
+        blank=False,
+        null=True,
+        choices=AttendingTextChoices.choices,
+        default=AttendingTextChoices.PENDING,
     )
 
     dietary_restrictions = models.TextField(
         blank=True,
         null=True
     )
-
-    
+    @property
+    def full_name(self):
+        return f'{self.first_name} {self.last_name}'

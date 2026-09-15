@@ -1,0 +1,41 @@
+<!-- SECTION 7: RSVP & Confirmation -->
+<section class="screen rsvp-screen">
+  <div class="rsvp-content">
+    <p class="rsvp-heading">Моля потвърдете присъствието си до 18.04.2026.</p>
+
+    <form method="post" class="wedding-form">
+      {% csrf_token %}
+
+      <div class="form-field">
+        <label for="{{ form.full_name.id_for_label }}">{{ form.first_name.label }}</label>
+        {{ form.first_name }}
+        {% if form.full_name.errors %}<span class="error">{{ form.first_name.errors.0 }}</span>{% endif %}
+      </div>
+
+      <div class="form-field">
+        <label for="{{ form.attending.id_for_label }}">{{ form.attending.label }}</label>
+        {{ form.attending }}
+        {% if form.attending.errors %}<span class="error">{{ form.attending.errors.0 }}</span>{% endif %}
+      </div>
+
+      <div class="form-field">
+        <label for="{{ form.dietary_restrictions.id_for_label }}">{{ form.dietary_restrictions.label }}</label>
+        {{ form.dietary_restrictions }}
+        {% if form.dietary_restrictions.errors %}<span class="error">{{ form.dietary_restrictions.errors.0 }}</span>{% endif %}
+      </div>
+
+      <button type="submit" class="btn-submit">ИЗПРАТИ</button>
+    </form>
+
+    <p class="rsvp-subtext">
+      Скъпи гости, ако сме пропуснали нещо или просто искате да попитате — свържете се с нас, ще се радвaме да ви чуем!
+    </p>
+    <div class="contacts">
+      <p><strong>Мартин:</strong> 0894/679567</p>
+      <p><strong>Дебора:</strong> 0892/205555</p>
+    </div>
+  </div>
+  <footer class="footer-tag">
+    made with ♡ by invito.ua
+  </footer>
+</section>

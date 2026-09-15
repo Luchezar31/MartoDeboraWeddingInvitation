@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from invitation.models import WeddingGuest
+
+
+@admin.register(WeddingGuest)
+class WeddingGuestAndmin(admin.ModelAdmin):
+    pass
+
